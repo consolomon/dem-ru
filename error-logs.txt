@@ -1,0 +1,540 @@
+Attaching to airflow-test-airflow-init-1
+airflow-test-airflow-init-1  | chown: changing ownership of '/sources/logs': Operation not permitted
+airflow-test-airflow-init-1  | chown: changing ownership of '/sources/dags': Operation not permitted
+airflow-test-airflow-init-1  | chown: changing ownership of '/sources/plugins': Operation not permitted
+airflow-test-airflow-init-1  | The container is run as root user. For security, consider using a regular user account.
+airflow-test-airflow-init-1  | 
+airflow-test-airflow-init-1  | /home/airflow/.local/lib/python3.7/site-packages/airflow/models/base.py:49 MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+airflow-test-airflow-init-1  | DB: postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-test-airflow-init-1  | Performing upgrade with database postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-test-airflow-init-1  | [2023-02-09 17:18:22,321] {migration.py:205} INFO - Context impl PostgresqlImpl.
+airflow-test-airflow-init-1  | [2023-02-09 17:18:22,322] {migration.py:212} INFO - Will assume transactional DDL.
+airflow-test-airflow-init-1  | [2023-02-09 17:18:22,323] {migration.py:205} INFO - Context impl PostgresqlImpl.
+airflow-test-airflow-init-1  | [2023-02-09 17:18:22,323] {migration.py:212} INFO - Will assume transactional DDL.
+airflow-test-airflow-init-1  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-test-airflow-init-1  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-test-airflow-init-1  | INFO  [alembic.runtime.migration] Running stamp_revision  -> 290244fb8b83
+airflow-test-airflow-init-1  | Upgrades done
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,193] {manager.py:243} INFO - Inserted Role: Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,210] {manager.py:243} INFO - Inserted Role: Public
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,229] {manager.py:824} WARNING - No user yet created, use flask fab command to do it.
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,308] {manager.py:504} INFO - Created Permission View: can edit on Passwords
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,316] {manager.py:562} INFO - Added Permission can edit on Passwords to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,338] {manager.py:504} INFO - Created Permission View: can read on Passwords
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,541] {manager.py:562} INFO - Added Permission can read on Passwords to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,709] {manager.py:504} INFO - Created Permission View: can edit on My Password
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,788] {manager.py:562} INFO - Added Permission can edit on My Password to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,817] {manager.py:504} INFO - Created Permission View: can read on My Password
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,847] {manager.py:562} INFO - Added Permission can read on My Password to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:44,916] {manager.py:504} INFO - Created Permission View: can edit on My Profile
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,076] {manager.py:562} INFO - Added Permission can edit on My Profile to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,189] {manager.py:504} INFO - Created Permission View: can read on My Profile
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,272] {manager.py:562} INFO - Added Permission can read on My Profile to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,723] {manager.py:504} INFO - Created Permission View: can create on Users
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,820] {manager.py:562} INFO - Added Permission can create on Users to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,841] {manager.py:504} INFO - Created Permission View: can read on Users
+airflow-test-airflow-init-1  | [2023-02-09 17:18:45,947] {manager.py:562} INFO - Added Permission can read on Users to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,032] {manager.py:504} INFO - Created Permission View: can edit on Users
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,126] {manager.py:562} INFO - Added Permission can edit on Users to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,363] {manager.py:504} INFO - Created Permission View: can delete on Users
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,403] {manager.py:562} INFO - Added Permission can delete on Users to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,672] {manager.py:504} INFO - Created Permission View: menu access on List Users
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,799] {manager.py:562} INFO - Added Permission menu access on List Users to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:46,952] {manager.py:504} INFO - Created Permission View: menu access on Security
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,098] {manager.py:562} INFO - Added Permission menu access on Security to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,313] {manager.py:504} INFO - Created Permission View: can create on Roles
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,457] {manager.py:562} INFO - Added Permission can create on Roles to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,546] {manager.py:504} INFO - Created Permission View: can read on Roles
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,576] {manager.py:562} INFO - Added Permission can read on Roles to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,649] {manager.py:504} INFO - Created Permission View: can edit on Roles
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,746] {manager.py:562} INFO - Added Permission can edit on Roles to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,921] {manager.py:504} INFO - Created Permission View: can delete on Roles
+airflow-test-airflow-init-1  | [2023-02-09 17:18:47,943] {manager.py:562} INFO - Added Permission can delete on Roles to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,091] {manager.py:504} INFO - Created Permission View: menu access on List Roles
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,211] {manager.py:562} INFO - Added Permission menu access on List Roles to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,333] {manager.py:504} INFO - Created Permission View: can read on User Stats Chart
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,346] {manager.py:562} INFO - Added Permission can read on User Stats Chart to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,449] {manager.py:504} INFO - Created Permission View: menu access on User's Statistics
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,528] {manager.py:562} INFO - Added Permission menu access on User's Statistics to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,670] {manager.py:504} INFO - Created Permission View: can read on Permissions
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,792] {manager.py:562} INFO - Added Permission can read on Permissions to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:48,941] {manager.py:504} INFO - Created Permission View: menu access on Actions
+airflow-test-airflow-init-1  | [2023-02-09 17:18:49,068] {manager.py:562} INFO - Added Permission menu access on Actions to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:49,200] {manager.py:504} INFO - Created Permission View: can read on View Menus
+airflow-test-airflow-init-1  | [2023-02-09 17:18:49,284] {manager.py:562} INFO - Added Permission can read on View Menus to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:49,611] {manager.py:504} INFO - Created Permission View: menu access on Resources
+airflow-test-airflow-init-1  | [2023-02-09 17:18:50,453] {manager.py:562} INFO - Added Permission menu access on Resources to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:50,666] {manager.py:504} INFO - Created Permission View: can read on Permission Views
+airflow-test-airflow-init-1  | [2023-02-09 17:18:50,684] {manager.py:562} INFO - Added Permission can read on Permission Views to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:50,788] {manager.py:504} INFO - Created Permission View: menu access on Permission Pairs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:50,864] {manager.py:562} INFO - Added Permission menu access on Permission Pairs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,211] {manager.py:504} INFO - Created Permission View: can create on DAG Runs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,215] {manager.py:562} INFO - Added Permission can create on DAG Runs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,221] {manager.py:504} INFO - Created Permission View: can read on DAG Runs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,226] {manager.py:562} INFO - Added Permission can read on DAG Runs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,239] {manager.py:504} INFO - Created Permission View: can edit on DAG Runs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,244] {manager.py:562} INFO - Added Permission can edit on DAG Runs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,249] {manager.py:504} INFO - Created Permission View: can delete on DAG Runs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,254] {manager.py:562} INFO - Added Permission can delete on DAG Runs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,259] {manager.py:504} INFO - Created Permission View: menu access on DAG Runs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,263] {manager.py:562} INFO - Added Permission menu access on DAG Runs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,276] {manager.py:504} INFO - Created Permission View: menu access on Browse
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,280] {manager.py:562} INFO - Added Permission menu access on Browse to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,296] {manager.py:504} INFO - Created Permission View: can read on Jobs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,303] {manager.py:562} INFO - Added Permission can read on Jobs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,309] {manager.py:504} INFO - Created Permission View: menu access on Jobs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,313] {manager.py:562} INFO - Added Permission menu access on Jobs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,347] {manager.py:504} INFO - Created Permission View: can read on Audit Logs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,352] {manager.py:562} INFO - Added Permission can read on Audit Logs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,366] {manager.py:504} INFO - Created Permission View: menu access on Audit Logs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,370] {manager.py:562} INFO - Added Permission menu access on Audit Logs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,395] {manager.py:504} INFO - Created Permission View: can create on Variables
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,398] {manager.py:562} INFO - Added Permission can create on Variables to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,406] {manager.py:504} INFO - Created Permission View: can read on Variables
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,415] {manager.py:562} INFO - Added Permission can read on Variables to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,420] {manager.py:504} INFO - Created Permission View: can edit on Variables
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,424] {manager.py:562} INFO - Added Permission can edit on Variables to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,429] {manager.py:504} INFO - Created Permission View: can delete on Variables
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,433] {manager.py:562} INFO - Added Permission can delete on Variables to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,438] {manager.py:504} INFO - Created Permission View: menu access on Variables
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,445] {manager.py:562} INFO - Added Permission menu access on Variables to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,458] {manager.py:504} INFO - Created Permission View: menu access on Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,466] {manager.py:562} INFO - Added Permission menu access on Admin to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,662] {manager.py:504} INFO - Created Permission View: can create on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,669] {manager.py:562} INFO - Added Permission can create on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,674] {manager.py:504} INFO - Created Permission View: can read on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,679] {manager.py:562} INFO - Added Permission can read on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,725] {manager.py:504} INFO - Created Permission View: can edit on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,730] {manager.py:562} INFO - Added Permission can edit on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,737] {manager.py:504} INFO - Created Permission View: can delete on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,747] {manager.py:562} INFO - Added Permission can delete on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,818] {manager.py:504} INFO - Created Permission View: menu access on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:51,829] {manager.py:562} INFO - Added Permission menu access on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:52,751] {manager.py:504} INFO - Created Permission View: clear on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:52,786] {manager.py:562} INFO - Added Permission clear on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:52,929] {manager.py:504} INFO - Created Permission View: set failed on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:52,959] {manager.py:562} INFO - Added Permission set failed on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,200] {manager.py:504} INFO - Created Permission View: set retry on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,254] {manager.py:562} INFO - Added Permission set retry on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,397] {manager.py:504} INFO - Created Permission View: set running on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,447] {manager.py:562} INFO - Added Permission set running on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,543] {manager.py:504} INFO - Created Permission View: set skipped on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,570] {manager.py:562} INFO - Added Permission set skipped on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,629] {manager.py:504} INFO - Created Permission View: set success on Task Instances
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,666] {manager.py:562} INFO - Added Permission set success on Task Instances to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,860] {manager.py:504} INFO - Created Permission View: can read on Task Reschedules
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,920] {manager.py:562} INFO - Added Permission can read on Task Reschedules to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:53,958] {manager.py:504} INFO - Created Permission View: menu access on Task Reschedules
+airflow-test-airflow-init-1  | [2023-02-09 17:18:54,067] {manager.py:562} INFO - Added Permission menu access on Task Reschedules to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:54,436] {manager.py:504} INFO - Created Permission View: can read on Triggers
+airflow-test-airflow-init-1  | [2023-02-09 17:18:54,531] {manager.py:562} INFO - Added Permission can read on Triggers to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:54,709] {manager.py:504} INFO - Created Permission View: menu access on Triggers
+airflow-test-airflow-init-1  | [2023-02-09 17:18:54,851] {manager.py:562} INFO - Added Permission menu access on Triggers to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:54,973] {manager.py:504} INFO - Created Permission View: can read on Configurations
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,042] {manager.py:562} INFO - Added Permission can read on Configurations to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,074] {manager.py:504} INFO - Created Permission View: menu access on Configurations
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,119] {manager.py:562} INFO - Added Permission menu access on Configurations to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,376] {manager.py:504} INFO - Created Permission View: can create on Connections
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,459] {manager.py:562} INFO - Added Permission can create on Connections to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,504] {manager.py:504} INFO - Created Permission View: can read on Connections
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,528] {manager.py:562} INFO - Added Permission can read on Connections to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,591] {manager.py:504} INFO - Created Permission View: can edit on Connections
+airflow-test-airflow-init-1  | [2023-02-09 17:18:55,672] {manager.py:562} INFO - Added Permission can edit on Connections to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:56,206] {manager.py:504} INFO - Created Permission View: can delete on Connections
+airflow-test-airflow-init-1  | [2023-02-09 17:18:56,310] {manager.py:562} INFO - Added Permission can delete on Connections to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:56,332] {manager.py:504} INFO - Created Permission View: menu access on Connections
+airflow-test-airflow-init-1  | [2023-02-09 17:18:56,422] {manager.py:562} INFO - Added Permission menu access on Connections to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:56,770] {manager.py:504} INFO - Created Permission View: can read on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:56,842] {manager.py:562} INFO - Added Permission can read on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,011] {manager.py:504} INFO - Created Permission View: menu access on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,037] {manager.py:562} INFO - Added Permission menu access on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,136] {manager.py:504} INFO - Created Permission View: muldelete on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,225] {manager.py:562} INFO - Added Permission muldelete on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,400] {manager.py:504} INFO - Created Permission View: mulemailsent on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,429] {manager.py:562} INFO - Added Permission mulemailsent on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,766] {manager.py:504} INFO - Created Permission View: mulemailsentfalse on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,788] {manager.py:562} INFO - Added Permission mulemailsentfalse on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,835] {manager.py:504} INFO - Created Permission View: mulnotificationsent on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:57,845] {manager.py:562} INFO - Added Permission mulnotificationsent on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,038] {manager.py:504} INFO - Created Permission View: mulnotificationsentfalse on SLA Misses
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,089] {manager.py:562} INFO - Added Permission mulnotificationsentfalse on SLA Misses to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,177] {manager.py:504} INFO - Created Permission View: can read on Plugins
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,230] {manager.py:562} INFO - Added Permission can read on Plugins to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,260] {manager.py:504} INFO - Created Permission View: menu access on Plugins
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,309] {manager.py:562} INFO - Added Permission menu access on Plugins to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,410] {manager.py:504} INFO - Created Permission View: can read on Providers
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,432] {manager.py:562} INFO - Added Permission can read on Providers to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,457] {manager.py:504} INFO - Created Permission View: menu access on Providers
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,591] {manager.py:562} INFO - Added Permission menu access on Providers to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,675] {manager.py:504} INFO - Created Permission View: can create on Pools
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,731] {manager.py:562} INFO - Added Permission can create on Pools to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,763] {manager.py:504} INFO - Created Permission View: can read on Pools
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,794] {manager.py:562} INFO - Added Permission can read on Pools to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,813] {manager.py:504} INFO - Created Permission View: can edit on Pools
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,982] {manager.py:562} INFO - Added Permission can edit on Pools to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:58,991] {manager.py:504} INFO - Created Permission View: can delete on Pools
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,109] {manager.py:562} INFO - Added Permission can delete on Pools to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,152] {manager.py:504} INFO - Created Permission View: menu access on Pools
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,190] {manager.py:562} INFO - Added Permission menu access on Pools to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,369] {manager.py:504} INFO - Created Permission View: can create on XComs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,395] {manager.py:562} INFO - Added Permission can create on XComs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,421] {manager.py:504} INFO - Created Permission View: can read on XComs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,522] {manager.py:562} INFO - Added Permission can read on XComs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,562] {manager.py:504} INFO - Created Permission View: can delete on XComs
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,580] {manager.py:562} INFO - Added Permission can delete on XComs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:18:59,829] {manager.py:504} INFO - Created Permission View: menu access on XComs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:00,328] {manager.py:562} INFO - Added Permission menu access on XComs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:01,055] {manager.py:504} INFO - Created Permission View: menu access on DAG Dependencies
+airflow-test-airflow-init-1  | [2023-02-09 17:19:01,278] {manager.py:562} INFO - Added Permission menu access on DAG Dependencies to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:03,817] {manager.py:504} INFO - Created Permission View: menu access on DAGs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:03,838] {manager.py:562} INFO - Added Permission menu access on DAGs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:04,213] {manager.py:504} INFO - Created Permission View: menu access on Datasets
+airflow-test-airflow-init-1  | [2023-02-09 17:19:04,234] {manager.py:562} INFO - Added Permission menu access on Datasets to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:04,419] {manager.py:504} INFO - Created Permission View: menu access on Documentation
+airflow-test-airflow-init-1  | [2023-02-09 17:19:04,520] {manager.py:562} INFO - Added Permission menu access on Documentation to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:04,736] {manager.py:504} INFO - Created Permission View: menu access on Docs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:04,823] {manager.py:562} INFO - Added Permission menu access on Docs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:15,082] {providers_manager.py:238} INFO - Optional provider feature disabled when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package
+airflow-test-airflow-init-1  | [2023-02-09 17:19:20,266] {providers_manager.py:238} INFO - Optional provider feature disabled when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package
+airflow-test-airflow-init-1  | [2023-02-09 17:19:20,824] {manager.py:504} INFO - Created Permission View: can read on DAGs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:21,119] {manager.py:504} INFO - Created Permission View: can edit on DAGs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:21,190] {manager.py:504} INFO - Created Permission View: can delete on DAGs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:21,339] {manager.py:504} INFO - Created Permission View: can read on Datasets
+airflow-test-airflow-init-1  | [2023-02-09 17:19:21,394] {manager.py:504} INFO - Created Permission View: can read on ImportError
+airflow-test-airflow-init-1  | [2023-02-09 17:19:21,751] {manager.py:504} INFO - Created Permission View: can read on DAG Code
+airflow-test-airflow-init-1  | [2023-02-09 17:19:21,815] {manager.py:504} INFO - Created Permission View: can read on DAG Warnings
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,252] {manager.py:243} INFO - Inserted Role: Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,335] {manager.py:562} INFO - Added Permission can read on Audit Logs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,364] {manager.py:562} INFO - Added Permission can read on DAGs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,447] {manager.py:504} INFO - Created Permission View: can read on DAG Dependencies
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,540] {manager.py:562} INFO - Added Permission can read on DAG Dependencies to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,555] {manager.py:562} INFO - Added Permission can read on DAG Code to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,570] {manager.py:562} INFO - Added Permission can read on DAG Runs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,750] {manager.py:562} INFO - Added Permission can read on Datasets to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:22,762] {manager.py:562} INFO - Added Permission can read on ImportError to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,109] {manager.py:562} INFO - Added Permission can read on DAG Warnings to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,119] {manager.py:562} INFO - Added Permission can read on Jobs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,123] {manager.py:562} INFO - Added Permission can read on My Password to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,126] {manager.py:562} INFO - Added Permission can edit on My Password to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,129] {manager.py:562} INFO - Added Permission can read on My Profile to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,132] {manager.py:562} INFO - Added Permission can edit on My Profile to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,136] {manager.py:562} INFO - Added Permission can read on Plugins to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,138] {manager.py:562} INFO - Added Permission can read on SLA Misses to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,143] {manager.py:562} INFO - Added Permission can read on Task Instances to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,160] {manager.py:504} INFO - Created Permission View: can read on Task Logs
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,166] {manager.py:562} INFO - Added Permission can read on Task Logs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,171] {manager.py:562} INFO - Added Permission can read on XComs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,180] {manager.py:504} INFO - Created Permission View: can read on Website
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,183] {manager.py:562} INFO - Added Permission can read on Website to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,187] {manager.py:562} INFO - Added Permission menu access on Browse to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,189] {manager.py:562} INFO - Added Permission menu access on DAGs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,194] {manager.py:562} INFO - Added Permission menu access on DAG Dependencies to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,200] {manager.py:562} INFO - Added Permission menu access on DAG Runs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,205] {manager.py:562} INFO - Added Permission menu access on Datasets to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,209] {manager.py:562} INFO - Added Permission menu access on Documentation to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,213] {manager.py:562} INFO - Added Permission menu access on Docs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,216] {manager.py:562} INFO - Added Permission menu access on Jobs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,230] {manager.py:562} INFO - Added Permission menu access on Audit Logs to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,250] {manager.py:562} INFO - Added Permission menu access on Plugins to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,253] {manager.py:562} INFO - Added Permission menu access on SLA Misses to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,263] {manager.py:562} INFO - Added Permission menu access on Task Instances to role Viewer
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,272] {manager.py:243} INFO - Inserted Role: User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,281] {manager.py:562} INFO - Added Permission can read on Audit Logs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,288] {manager.py:562} INFO - Added Permission can read on DAGs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,299] {manager.py:562} INFO - Added Permission can read on DAG Dependencies to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,333] {manager.py:562} INFO - Added Permission can read on DAG Code to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,353] {manager.py:562} INFO - Added Permission can read on DAG Runs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,356] {manager.py:562} INFO - Added Permission can read on Datasets to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,359] {manager.py:562} INFO - Added Permission can read on ImportError to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,362] {manager.py:562} INFO - Added Permission can read on DAG Warnings to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,366] {manager.py:562} INFO - Added Permission can read on Jobs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,369] {manager.py:562} INFO - Added Permission can read on My Password to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,373] {manager.py:562} INFO - Added Permission can edit on My Password to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,376] {manager.py:562} INFO - Added Permission can read on My Profile to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,383] {manager.py:562} INFO - Added Permission can edit on My Profile to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,386] {manager.py:562} INFO - Added Permission can read on Plugins to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,390] {manager.py:562} INFO - Added Permission can read on SLA Misses to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,393] {manager.py:562} INFO - Added Permission can read on Task Instances to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,414] {manager.py:562} INFO - Added Permission can read on Task Logs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,432] {manager.py:562} INFO - Added Permission can read on XComs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,456] {manager.py:562} INFO - Added Permission can read on Website to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,458] {manager.py:562} INFO - Added Permission menu access on Browse to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,471] {manager.py:562} INFO - Added Permission menu access on DAGs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,476] {manager.py:562} INFO - Added Permission menu access on DAG Dependencies to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,480] {manager.py:562} INFO - Added Permission menu access on DAG Runs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,483] {manager.py:562} INFO - Added Permission menu access on Datasets to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,490] {manager.py:562} INFO - Added Permission menu access on Documentation to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,493] {manager.py:562} INFO - Added Permission menu access on Docs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,503] {manager.py:562} INFO - Added Permission menu access on Jobs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,505] {manager.py:562} INFO - Added Permission menu access on Audit Logs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,513] {manager.py:562} INFO - Added Permission menu access on Plugins to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,522] {manager.py:562} INFO - Added Permission menu access on SLA Misses to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,535] {manager.py:562} INFO - Added Permission menu access on Task Instances to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,541] {manager.py:562} INFO - Added Permission can edit on DAGs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,545] {manager.py:562} INFO - Added Permission can delete on DAGs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,552] {manager.py:562} INFO - Added Permission can create on Task Instances to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,557] {manager.py:562} INFO - Added Permission can edit on Task Instances to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,572] {manager.py:562} INFO - Added Permission can delete on Task Instances to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,576] {manager.py:562} INFO - Added Permission can create on DAG Runs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,580] {manager.py:562} INFO - Added Permission can edit on DAG Runs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,587] {manager.py:562} INFO - Added Permission can delete on DAG Runs to role User
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,590] {manager.py:243} INFO - Inserted Role: Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,600] {manager.py:562} INFO - Added Permission can read on Audit Logs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,602] {manager.py:562} INFO - Added Permission can read on DAGs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,635] {manager.py:562} INFO - Added Permission can read on DAG Dependencies to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,656] {manager.py:562} INFO - Added Permission can read on DAG Code to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,660] {manager.py:562} INFO - Added Permission can read on DAG Runs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,663] {manager.py:562} INFO - Added Permission can read on Datasets to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,667] {manager.py:562} INFO - Added Permission can read on ImportError to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,669] {manager.py:562} INFO - Added Permission can read on DAG Warnings to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,673] {manager.py:562} INFO - Added Permission can read on Jobs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,675] {manager.py:562} INFO - Added Permission can read on My Password to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,679] {manager.py:562} INFO - Added Permission can edit on My Password to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,683] {manager.py:562} INFO - Added Permission can read on My Profile to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,687] {manager.py:562} INFO - Added Permission can edit on My Profile to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,690] {manager.py:562} INFO - Added Permission can read on Plugins to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,698] {manager.py:562} INFO - Added Permission can read on SLA Misses to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,701] {manager.py:562} INFO - Added Permission can read on Task Instances to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,708] {manager.py:562} INFO - Added Permission can read on Task Logs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,711] {manager.py:562} INFO - Added Permission can read on XComs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,730] {manager.py:562} INFO - Added Permission can read on Website to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,733] {manager.py:562} INFO - Added Permission menu access on Browse to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,737] {manager.py:562} INFO - Added Permission menu access on DAGs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,739] {manager.py:562} INFO - Added Permission menu access on DAG Dependencies to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,743] {manager.py:562} INFO - Added Permission menu access on DAG Runs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,746] {manager.py:562} INFO - Added Permission menu access on Datasets to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,752] {manager.py:562} INFO - Added Permission menu access on Documentation to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,759] {manager.py:562} INFO - Added Permission menu access on Docs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,774] {manager.py:562} INFO - Added Permission menu access on Jobs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,779] {manager.py:562} INFO - Added Permission menu access on Audit Logs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,799] {manager.py:562} INFO - Added Permission menu access on Plugins to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,802] {manager.py:562} INFO - Added Permission menu access on SLA Misses to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,806] {manager.py:562} INFO - Added Permission menu access on Task Instances to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,809] {manager.py:562} INFO - Added Permission can edit on DAGs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,813] {manager.py:562} INFO - Added Permission can delete on DAGs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,817] {manager.py:562} INFO - Added Permission can create on Task Instances to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,824] {manager.py:562} INFO - Added Permission can edit on Task Instances to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,828] {manager.py:562} INFO - Added Permission can delete on Task Instances to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,833] {manager.py:562} INFO - Added Permission can create on DAG Runs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,838] {manager.py:562} INFO - Added Permission can edit on DAG Runs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,844] {manager.py:562} INFO - Added Permission can delete on DAG Runs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,847] {manager.py:562} INFO - Added Permission can read on Configurations to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,850] {manager.py:562} INFO - Added Permission menu access on Admin to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,854] {manager.py:562} INFO - Added Permission menu access on Configurations to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,858] {manager.py:562} INFO - Added Permission menu access on Connections to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,862] {manager.py:562} INFO - Added Permission menu access on Pools to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,868] {manager.py:562} INFO - Added Permission menu access on Variables to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,872] {manager.py:562} INFO - Added Permission menu access on XComs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,876] {manager.py:562} INFO - Added Permission can create on Connections to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,878] {manager.py:562} INFO - Added Permission can read on Connections to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,883] {manager.py:562} INFO - Added Permission can edit on Connections to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,893] {manager.py:562} INFO - Added Permission can delete on Connections to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,900] {manager.py:562} INFO - Added Permission can create on Pools to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,904] {manager.py:562} INFO - Added Permission can read on Pools to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,909] {manager.py:562} INFO - Added Permission can edit on Pools to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,913] {manager.py:562} INFO - Added Permission can delete on Pools to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,925] {manager.py:562} INFO - Added Permission can read on Providers to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,927] {manager.py:562} INFO - Added Permission can create on Variables to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,930] {manager.py:562} INFO - Added Permission can read on Variables to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,933] {manager.py:562} INFO - Added Permission can edit on Variables to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,936] {manager.py:562} INFO - Added Permission can delete on Variables to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,939] {manager.py:562} INFO - Added Permission can delete on XComs to role Op
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,942] {manager.py:562} INFO - Added Permission can read on DAGs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,951] {manager.py:562} INFO - Added Permission can read on DAG Dependencies to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,960] {manager.py:562} INFO - Added Permission can read on DAG Code to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,966] {manager.py:562} INFO - Added Permission can read on Datasets to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,972] {manager.py:562} INFO - Added Permission can read on ImportError to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,977] {manager.py:562} INFO - Added Permission can read on DAG Warnings to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,989] {manager.py:562} INFO - Added Permission can read on Task Logs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,994] {manager.py:562} INFO - Added Permission can read on Website to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:23,998] {manager.py:562} INFO - Added Permission can edit on DAGs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:24,003] {manager.py:562} INFO - Added Permission can delete on DAGs to role Admin
+airflow-test-airflow-init-1  | [2023-02-09 17:19:24,213] {manager.py:212} INFO - Added user airflow
+airflow-test-airflow-init-1  | User "airflow" created with role "Admin"
+airflow-test-airflow-init-1  | 2.5.1
+airflow-test-airflow-init-1 exited with code 0
+airflow-test-airflow-worker-1     | ....................
+airflow-test-airflow-worker-1     | ERROR! Maximum number of retries (20) reached.
+airflow-test-airflow-worker-1     | 
+airflow-test-airflow-worker-1     | Last check result:
+airflow-test-airflow-worker-1     | $ airflow db check
+airflow-test-airflow-worker-1     | Unable to load the config, contains a configuration error.
+airflow-test-airflow-worker-1     | Traceback (most recent call last):
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-worker-1     |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-worker-1     | FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2023-02-09'
+airflow-test-airflow-worker-1     | 
+airflow-test-airflow-worker-1     | During handling of the above exception, another exception occurred:
+airflow-test-airflow-worker-1     | 
+airflow-test-airflow-worker-1     | Traceback (most recent call last):
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/logging/config.py", line 563, in configure
+airflow-test-airflow-worker-1     |     handler = self.configure_handler(handlers[name])
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/logging/config.py", line 736, in configure_handler
+airflow-test-airflow-worker-1     |     result = factory(**kwargs)
+airflow-test-airflow-worker-1     |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_processor_handler.py", line 49, in __init__
+airflow-test-airflow-worker-1     |     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/pathlib.py", line 1277, in mkdir
+airflow-test-airflow-worker-1     |     self.parent.mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-worker-1     |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-worker-1     | PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+airflow-test-airflow-worker-1     | 
+airflow-test-airflow-worker-1     | The above exception was the direct cause of the following exception:
+airflow-test-airflow-worker-1     | 
+airflow-test-airflow-worker-1     | Traceback (most recent call last):
+airflow-test-airflow-worker-1     |   File "/home/airflow/.local/bin/airflow", line 5, in <module>
+airflow-test-airflow-worker-1     |     from airflow.__main__ import main
+airflow-test-airflow-worker-1     |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/__init__.py", line 55, in <module>
+airflow-test-airflow-worker-1     |     settings.initialize()
+airflow-test-airflow-worker-1     |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py", line 569, in initialize
+airflow-test-airflow-worker-1     |     LOGGING_CLASS_PATH = configure_logging()
+airflow-test-airflow-worker-1     |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 74, in configure_logging
+airflow-test-airflow-worker-1     |     raise e
+airflow-test-airflow-worker-1     |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 69, in configure_logging
+airflow-test-airflow-worker-1     |     dictConfig(logging_config)
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/logging/config.py", line 800, in dictConfig
+airflow-test-airflow-worker-1     |     dictConfigClass(config).configure()
+airflow-test-airflow-worker-1     |   File "/usr/local/lib/python3.7/logging/config.py", line 571, in configure
+airflow-test-airflow-worker-1     |     '%r' % name) from e
+airflow-test-airflow-worker-1     | ValueError: Unable to configure handler 'processor'
+airflow-test-airflow-worker-1     | 
+airflow-test-airflow-worker-1 exited with code 1
+airflow-test-airflow-triggerer-1  | ....................
+airflow-test-airflow-triggerer-1  | ERROR! Maximum number of retries (20) reached.
+airflow-test-airflow-triggerer-1  | 
+airflow-test-airflow-triggerer-1  | Last check result:
+airflow-test-airflow-triggerer-1  | $ airflow db check
+airflow-test-airflow-triggerer-1  | Unable to load the config, contains a configuration error.
+airflow-test-airflow-triggerer-1  | Traceback (most recent call last):
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-triggerer-1  |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-triggerer-1  | FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2023-02-09'
+airflow-test-airflow-triggerer-1  | 
+airflow-test-airflow-triggerer-1  | During handling of the above exception, another exception occurred:
+airflow-test-airflow-triggerer-1  | 
+airflow-test-airflow-triggerer-1  | Traceback (most recent call last):
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 563, in configure
+airflow-test-airflow-triggerer-1  |     handler = self.configure_handler(handlers[name])
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 736, in configure_handler
+airflow-test-airflow-triggerer-1  |     result = factory(**kwargs)
+airflow-test-airflow-triggerer-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_processor_handler.py", line 49, in __init__
+airflow-test-airflow-triggerer-1  |     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1277, in mkdir
+airflow-test-airflow-triggerer-1  |     self.parent.mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-triggerer-1  |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-triggerer-1  | PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+airflow-test-airflow-triggerer-1  | 
+airflow-test-airflow-triggerer-1  | The above exception was the direct cause of the following exception:
+airflow-test-airflow-triggerer-1  | 
+airflow-test-airflow-triggerer-1  | Traceback (most recent call last):
+airflow-test-airflow-triggerer-1  |   File "/home/airflow/.local/bin/airflow", line 5, in <module>
+airflow-test-airflow-triggerer-1  |     from airflow.__main__ import main
+airflow-test-airflow-triggerer-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/__init__.py", line 55, in <module>
+airflow-test-airflow-triggerer-1  |     settings.initialize()
+airflow-test-airflow-triggerer-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py", line 569, in initialize
+airflow-test-airflow-triggerer-1  |     LOGGING_CLASS_PATH = configure_logging()
+airflow-test-airflow-triggerer-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 74, in configure_logging
+airflow-test-airflow-triggerer-1  |     raise e
+airflow-test-airflow-triggerer-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 69, in configure_logging
+airflow-test-airflow-triggerer-1  |     dictConfig(logging_config)
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 800, in dictConfig
+airflow-test-airflow-triggerer-1  |     dictConfigClass(config).configure()
+airflow-test-airflow-triggerer-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 571, in configure
+airflow-test-airflow-triggerer-1  |     '%r' % name) from e
+airflow-test-airflow-triggerer-1  | ValueError: Unable to configure handler 'processor'
+airflow-test-airflow-triggerer-1  | 
+airflow-test-airflow-webserver-1  | ....................
+airflow-test-airflow-webserver-1  | ERROR! Maximum number of retries (20) reached.
+airflow-test-airflow-webserver-1  | 
+airflow-test-airflow-webserver-1  | Last check result:
+airflow-test-airflow-webserver-1  | $ airflow db check
+airflow-test-airflow-webserver-1  | Unable to load the config, contains a configuration error.
+airflow-test-airflow-webserver-1  | Traceback (most recent call last):
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-webserver-1  |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-webserver-1  | FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2023-02-09'
+airflow-test-airflow-webserver-1  | 
+airflow-test-airflow-webserver-1  | During handling of the above exception, another exception occurred:
+airflow-test-airflow-webserver-1  | 
+airflow-test-airflow-webserver-1  | Traceback (most recent call last):
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 563, in configure
+airflow-test-airflow-webserver-1  |     handler = self.configure_handler(handlers[name])
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 736, in configure_handler
+airflow-test-airflow-webserver-1  |     result = factory(**kwargs)
+airflow-test-airflow-webserver-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_processor_handler.py", line 49, in __init__
+airflow-test-airflow-webserver-1  |     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1277, in mkdir
+airflow-test-airflow-webserver-1  |     self.parent.mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-webserver-1  |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-webserver-1  | PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+airflow-test-airflow-webserver-1  | 
+airflow-test-airflow-webserver-1  | The above exception was the direct cause of the following exception:
+airflow-test-airflow-webserver-1  | 
+airflow-test-airflow-webserver-1  | Traceback (most recent call last):
+airflow-test-airflow-webserver-1  |   File "/home/airflow/.local/bin/airflow", line 5, in <module>
+airflow-test-airflow-webserver-1  |     from airflow.__main__ import main
+airflow-test-airflow-webserver-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/__init__.py", line 55, in <module>
+airflow-test-airflow-webserver-1  |     settings.initialize()
+airflow-test-airflow-webserver-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py", line 569, in initialize
+airflow-test-airflow-webserver-1  |     LOGGING_CLASS_PATH = configure_logging()
+airflow-test-airflow-webserver-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 74, in configure_logging
+airflow-test-airflow-webserver-1  |     raise e
+airflow-test-airflow-webserver-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 69, in configure_logging
+airflow-test-airflow-webserver-1  |     dictConfig(logging_config)
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 800, in dictConfig
+airflow-test-airflow-webserver-1  |     dictConfigClass(config).configure()
+airflow-test-airflow-webserver-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 571, in configure
+airflow-test-airflow-webserver-1  |     '%r' % name) from e
+airflow-test-airflow-webserver-1  | ValueError: Unable to configure handler 'processor'
+airflow-test-airflow-webserver-1  | 
+airflow-test-airflow-scheduler-1  | ....................
+airflow-test-airflow-scheduler-1  | ERROR! Maximum number of retries (20) reached.
+airflow-test-airflow-scheduler-1  | 
+airflow-test-airflow-scheduler-1  | Last check result:
+airflow-test-airflow-scheduler-1  | $ airflow db check
+airflow-test-airflow-scheduler-1  | Unable to load the config, contains a configuration error.
+airflow-test-airflow-scheduler-1  | Traceback (most recent call last):
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-scheduler-1  |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-scheduler-1  | FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2023-02-09'
+airflow-test-airflow-scheduler-1  | 
+airflow-test-airflow-scheduler-1  | During handling of the above exception, another exception occurred:
+airflow-test-airflow-scheduler-1  | 
+airflow-test-airflow-scheduler-1  | Traceback (most recent call last):
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 563, in configure
+airflow-test-airflow-scheduler-1  |     handler = self.configure_handler(handlers[name])
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 736, in configure_handler
+airflow-test-airflow-scheduler-1  |     result = factory(**kwargs)
+airflow-test-airflow-scheduler-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_processor_handler.py", line 49, in __init__
+airflow-test-airflow-scheduler-1  |     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1277, in mkdir
+airflow-test-airflow-scheduler-1  |     self.parent.mkdir(parents=True, exist_ok=True)
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/pathlib.py", line 1273, in mkdir
+airflow-test-airflow-scheduler-1  |     self._accessor.mkdir(self, mode)
+airflow-test-airflow-scheduler-1  | PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+airflow-test-airflow-scheduler-1  | 
+airflow-test-airflow-scheduler-1  | The above exception was the direct cause of the following exception:
+airflow-test-airflow-scheduler-1  | 
+airflow-test-airflow-scheduler-1  | Traceback (most recent call last):
+airflow-test-airflow-scheduler-1  |   File "/home/airflow/.local/bin/airflow", line 5, in <module>
+airflow-test-airflow-scheduler-1  |     from airflow.__main__ import main
+airflow-test-airflow-scheduler-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/__init__.py", line 55, in <module>
+airflow-test-airflow-scheduler-1  |     settings.initialize()
+airflow-test-airflow-scheduler-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py", line 569, in initialize
+airflow-test-airflow-scheduler-1  |     LOGGING_CLASS_PATH = configure_logging()
+airflow-test-airflow-scheduler-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 74, in configure_logging
+airflow-test-airflow-scheduler-1  |     raise e
+airflow-test-airflow-scheduler-1  |   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/logging_config.py", line 69, in configure_logging
+airflow-test-airflow-scheduler-1  |     dictConfig(logging_config)
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 800, in dictConfig
+airflow-test-airflow-scheduler-1  |     dictConfigClass(config).configure()
+airflow-test-airflow-scheduler-1  |   File "/usr/local/lib/python3.7/logging/config.py", line 571, in configure
+airflow-test-airflow-scheduler-1  |     '%r' % name) from e
+airflow-test-airflow-scheduler-1  | ValueError: Unable to configure handler 'processor'
+airflow-test-airflow-scheduler-1  | 
+airflow-test-airflow-triggerer-1 exited with code 1
+airflow-test-airflow-scheduler-1 exited with code 1
+airflow-test-airflow-webserver-1 exited with code 1
+
