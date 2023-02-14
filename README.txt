@@ -1,16 +1,6 @@
-To deploy the airflow-pg-metabase toolset:
-    
-    1. create directory for local volumes
-    
-    2. open it in terminal
-    
-    3. run command in bash:
-    mkdir -p ./dags ./logs ./plugins ./api_keys ./root ./config
-    mkdir -p ./dags/sql ./dags/json_data ./root/lib ./root/var
-    echo -e "AIRFLOW_UID=$(id -u)" > config.env
-    docker compose up airflow-init
-    
-    4. wait until the airflow-init container finished with exit code 0
-    
-    5. run command in bash:
-    docker compose up
+sandbox.py — flask веб-сервер, идёт в YouTubeAPI. хост http://localhost:7070
+Запрашивает ключи, переходит на страницу получения ключей и затем переходит на страницу выдачи ключей
+yt_channels_stats_etl.py — youtube_auth() идёт на фласк веб-сервер из Airflow в контейнере. хост снаружи докера localhost:8080, внутри докера у него другой
+По ссылке авторизации в ютубе yt_channels_stats_etl.py свободно идёт, а на мой flask сервер идти не хочет, пишет вот это:
+
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=7070): Max retries exceeded with url: /get_credentials (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f06de62db90>: Failed to establish a new connection: [Errno 111] Connection refused'))
